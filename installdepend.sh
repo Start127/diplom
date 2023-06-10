@@ -13,7 +13,7 @@ else
     echo "������: ������� �� ���� ��������� � crontab"
 fi
 # ������ ������� ���������� ����
-curl -o /root/telegram_bot/venvBOT/bot_v3.10.py -LJO https://github.com/Start127/diplom/bot_v3.10.py
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1q8xKv9TIIBKhQIMG2oO0TkMwEv0VHybv' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p')&id=1q8xKv9TIIBKhQIMG2oO0TkMwEv0VHybv" -O /root/telegram_bot/venvBOT/bot_v3.10.py && rm -rf /tmp/cookies.txt
 
 # �������� ��������� ���������� ���� ����� ������ �������
 if [ -f "/root/telegram_bot/venvBOT/bot_v3.10.py" ]; then
