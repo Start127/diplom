@@ -6,7 +6,7 @@ import paramiko
 
 logging.basicConfig(level=logging.DEBUG)
 
-with open("token.txt", "r") as file:
+with open("/root/telegram_bot/venvBOT/token.txt", "r") as file:
     api_token = file.read().strip()
 
 bot = telebot.TeleBot(api_token)
@@ -52,7 +52,7 @@ def execute_command_group1(message):
             with open("temp_command.txt", "w") as file:
                 file.write(remote_command)
 
-            with open("credentials.txt", "r") as file:
+            with open("/root/telegram_bot/venvBOT/credentials.txt", "r") as file:
                 username, password = [line.strip() for line in file]
             remote_pc = f"{command[at_index+1:].strip()}.zhemanovy.ru"
 
